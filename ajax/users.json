@@ -1,0 +1,22 @@
+[
+    {
+        "firstName":"paulo",
+        "lastName":"nunes",
+        "email":"pnunes@gmail.com"
+    },
+    {
+        "firstName":"cesar",
+        "lastName":"sampaio",
+        "email":"csampaio@gmail.com"
+    },
+    {
+        "firstName":"evair",
+        "lastName":"matador",
+        "email":"ematador@gmail.com"
+    },
+    {
+        "firstName":"edmundo",
+        "lastName":"animal",
+        "email":"eanimal@gmail.com"
+    }
+]

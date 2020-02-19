@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso JQuery| selectors</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Jquery Crash Course</h1>
+
+        <style>
+            body {
+                font-size: 17px;
+                font-family: arial;
+                background: #f4f4f4;
+                line-height: 1.5em;
+            }
+
+            header {
+                background: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                border-bottom: 4px #000 solid;
+                margin-bottom: 10px;
+            }
+
+            #container {
+                width: 90%;
+                margin: auto;
+                padding: 10px;
+            }
+        </style>
+    </header>
+
+    <div id="container">
+
+        <h3>Mouse Events</h3>
+        <button id="btn1" class="bott">btn1</button>
+        <button id="btn2">btn2</button>
+        <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aspernatur error suscipit
+            dolorum, consequuntur veritatis!</p>
+
+        <hr>
+
+        <form id="form">
+
+            <label>Name</label><br>
+            <input type="text" id="name" name="name">
+            <br>
+            <label> Email</label><br>
+            <input type="text" name="email" id="email">
+            <br>
+            <label>Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+            /*  $('#btn1').click(function () {
+                  $('.para1').hide();
+                  $('.para1').toggle();
+              });
+  
+              $('#btn2').click(function () {
+                  $('.para1').show();
+              });
+  
+              $('#btn1').hover(function () {
+                  $('.para1').toggle();
+              });
+  
+              $('#btn2').dblclick(function () {
+                  $('.para1').toggle();
+              });            
+  
+              $('#btn1').on('mousedown', function () {
+                  $('.para1').toggle();
+              });
+  
+              $('#btn1').on('mouseup', function () {
+                  $('.para1').toggle();
+              });
+  
+            $('#btn1').click(function (e) {
+                // alert(e.currentTarget.id);
+                //alert(e.currentTarget.outerHTML);
+                alert(e.currentTarget.className);
+            })           
+
+            $('input').focus(function(){
+                $(this).css('background','pink');
+            })
+
+            $('input').blur(function(){
+                $(this).css('background','white');
+            })
+             */
+
+             $('select#gender').change(function(e){
+                 alert(e.target.value);
+             });
+
+             $('#form').submit(function(e){
+                 e.preventDefault();
+                 var name=$('input#name').val();
+                 console.log(name);
+             })
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
